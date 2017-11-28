@@ -2,11 +2,7 @@
     display: grid;  
     width: 960px;
   }
-
-h2 {
-    color: #ffc01f;
-}
-
+  
 h3 {
     color: #ffc01f;
 }
@@ -25,6 +21,10 @@ body{
     margin: auto;
 
 
+}
+.name{
+    margin: 0px 0px 0px 15px;
+    color: #ffc01f;
 }
 .top {
     display: grid;
@@ -57,10 +57,14 @@ body{
     text-align: right;
     
 }
+.excited{
+    color: #ffc01f;
+}
 .chooseHelio{
     background-color: #545353;
     grid-column-start: 1;
     grid-column-end: 3;
+    margin: 5px;
 }
 article{
     background-color: #545353;
