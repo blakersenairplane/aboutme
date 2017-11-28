@@ -1,58 +1,84 @@
-
-$logo-clr: #ffc01f;
-$helio-gry: #3a393a;
-$content-clr: #cdcdcd;
-$header-clr: #fff;
-$card-clr: #545353;
-
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-img:not([src^='https://heliotraining.com']){
-  max-width: 235px;
-}
-
 .page-wrap {
-  width: 960px;
-  margin: 0 auto;
-}
-
-header{
-    text-align: center;
-}
-
-body{
+    display: grid;  
     width: 960px;
-    background-color: #3a393a;
-}
-.top {
-    display: grid;
-    grid-column: 1fr 2fr;
-}
-.name{
+  }
 
-}
-
-.date {
-    
-}
-.reasonHelio{
-    background-color: #545353;
-}
-.container{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-
+h2 {
+    color: #ffc01f;
 }
 
 h3 {
     color: #ffc01f;
 }
 
-
 li {
     color: #ffffff;
 }
+header{
+    max-width: 960px;
+    text-align: center;
+}
+
+body{
+    width: 960px;
+    background-color: #3a393a;
+    margin: auto;
+
+
+}
+.top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+}
+.topLeft {
+    align-content: right;
+}
+.topRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .10fr 1fr;
+}
+
+.middle {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border:#333 1px solid;
+
+}
+
+.bottom {
+    margin: 10px;
+    grid-template-rows: .5fr, 1fr;
+}
+.date {
+    color: #ffffff;
+    text-align: right;
+    
+}
+.chooseHelio{
+    background-color: #545353;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+article{
+    background-color: #545353;
+    color: #ffffff;
+}
+figure {
+    margin: 5px;
+    position: relative;
+}
+figcaption {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 5px;
+    width: 234px;
+}
+p {
+    margin: 0px;
+}
+
+
